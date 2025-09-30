@@ -10,11 +10,11 @@ export default function Tablet({  content, selectedId }) {
   //Tramite l'id indivituo l'elemento giusto
   const activeContent = content.find(c => c.id === selectedId);
   const textures = {
-  1: "/mercurio.jpg",
-  2: "/venere.jpg",
-  3: "/earth.jpg",
-  4: "/moon.jpg",
-  5: "/mars.jpg"
+  1: "/personalpage/assets/mercurio.jpg",
+  2: "/personalpage/assets/venere.jpg",
+  3: "/personalpage/assets/earth.jpg",
+  4: "/personalpage/assets/moon.jpg",
+  5: "/personalpage/assets/mars.jpg"
 };
 
   return (
@@ -49,7 +49,7 @@ export default function Tablet({  content, selectedId }) {
         <pointLight position={[10, 10, 10]} />
         <Planet size={1.2} position={[-0.2, 1, 1]}
         
-      textureUrl={textures[selectedId] || "/earth.jpg"}
+      textureUrl={textures[selectedId] || "/personalpage/assets/earth.jpg" }
      />
          </Canvas>
        </motion.div>
@@ -79,7 +79,8 @@ export default function Tablet({  content, selectedId }) {
         <Planet 
         size={1.2} 
         position={[-0.2, 1, 1]} 
-        textureUrl={textures[selectedId] || "/earth.jpg"} 
+       textureUrl={textures[selectedId] || "/personalpage/assets/earth.jpg"}
+
         />
          </Canvas>
               </motion.div>

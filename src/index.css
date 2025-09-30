@@ -21,8 +21,9 @@
 /* 
   background-color: #aaff64; */
 
-  
-  background-image: url('/space.jpg'); /* 👈 path corretto */
+background-image: url('/space.jpg');
+
+
   background-size:cover;   /* fa riempire tutta l’area */
   background-position: center; /* centra l’immagine */
   background-repeat: no-repeat; /* evita ripetizioni */

@@ -21,6 +21,7 @@ import { AnimatePresence, motion } from "framer-motion"
 
 
 
+
 function App() {
 
 
@@ -43,7 +44,7 @@ const [content] = useState([
       <>
         <ul > 
 
-        <li> <FontAwesomeIcon icon={faGraduationCap}  size="2x" /> Laure triennale in <i>Scienze Psicologiche della personalità e delle e relazioni interpersonali</i>   .</li>
+        <li> <FontAwesomeIcon icon={faGraduationCap}  size="2x" /> Laure triennale in <i>Scienze Psicologiche della personalità e delle relazioni interpersonali</i>   .</li>
         <li>Corso enaip in <i>"Tecnico di produzione multimediale"</i>.</li>
         <li>Corso Aulab  <i>"Sviluppatore web fullstack"</i>.</li>
         <li>Approfondimenti e specializzazione in React e tecnologie moderne tramite corsi online e autoformazione.</li>
@@ -230,7 +231,7 @@ const [selectedId, setSelectedId] = useState(6);
       <Canvas camera={{ position: [0, 0, 5] }} className="canvas">
         <ambientLight intensity={3.7} />
         <pointLight position={[10, 10, 10]} />
-        <Planet size={3.5} position={[0, 0, 0]} textureUrl="/earth.jpg" />
+        <Planet size={3.5} position={[0, 0, 0]} textureUrl="/personalpage/assets/earth.jpg" />
       </Canvas>
     </div>
 
